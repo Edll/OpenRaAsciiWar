@@ -1,0 +1,72 @@
+Metadata:
+	Title: ASCII WAR
+	Version: {DEV_VERSION}
+
+Packages:
+	.
+	$ascii-war: ascii-war
+	./mods/common: common
+	ascii-war|bits
+
+MapFolders:
+	ascii-war|maps: System
+
+Rules:
+	ascii-war|rules.yaml
+
+TileSets:
+	ascii-war|tileset.yaml
+
+Cursors:
+	ascii-war|cursor.yaml
+
+Chrome:
+	ascii-war|chrome.yaml
+
+Assemblies:
+	common|OpenRA.Mods.Common.dll
+	ascii-war|OpenRA.Mods.ascii-war.dll
+
+ChromeLayout:
+	ascii-war|mainmenu.yaml
+
+Notifications:
+
+Translations:
+	ascii-war|english.yaml
+
+Hotkeys:
+	common|hotkeys/game.yaml
+
+LoadScreen: BlankLoadScreen
+
+ServerTraits:
+	LobbyCommands
+	PlayerPinger
+	MasterServerPinger
+	LobbySettingsNotification
+
+ChromeMetrics:
+	common|metrics.yaml
+	ascii-war|metrics.yaml
+
+Fonts:
+	Bold:
+		Font: common|FreeSansBold.ttf
+		Size:14
+
+MapGrid:
+	TileSize: 32, 32
+	Type: Rectangular
+
+SpriteFormats: ShpTS
+
+SpriteSequenceFormat: DefaultSpriteSequence
+
+ModelSequenceFormat: PlaceholderModelSequence
+
+GameSpeeds:
+	default:
+		Name: Normal
+		Timestep: 40
+		OrderLatency: 3

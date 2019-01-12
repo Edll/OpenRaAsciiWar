@@ -1,0 +1,17 @@
+Container@MAINMENU:
+	Logic: TemplateMenuLogic
+	Children:
+		Button@START_BUTTON:
+			X: (WINDOW_RIGHT - WIDTH) / 2
+			Y: (WINDOW_BOTTOM - HEIGHT) / 2
+			Width: 140
+			Height: 30
+			Text: Start
+			Font: Bold
+		Button@QUIT_BUTTON:
+			X: (WINDOW_RIGHT - WIDTH) / 2
+			Y: (WINDOW_BOTTOM - HEIGHT) / 2
+			Width: 140
+			Height: 30
+			Text: Quit
+			Font: Bold
